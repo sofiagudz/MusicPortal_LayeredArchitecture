@@ -16,7 +16,7 @@
 
         public int? AccessLevel { get; set; }
 
-        public virtual ICollection<Song> Songs { get; set; }
+        public ICollection<Song> Songs { get; set; }
         public User()
         {
             this.Songs = new HashSet<Song>();
